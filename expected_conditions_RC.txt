@@ -1,0 +1,12 @@
+| Função do EC                                  | Para que serve                                      |
+| --------------------------------------------- | --------------------------------------------------- |
+| element_to_be_clickable                       | elemento visível e habilitado                       |
+| presence_of_element_located                   | elemento existe no DOM                              |
+| visibility_of_element_located                 | elemento existe e está visível                      |
+| visibility_of                                 | mesmo acima, mas com WebElement                     |
+| invisibility_of_element_located               | espera elemento sumir ou ficar invisível            |
+| text_to_be_present_in_element                 | texto dentro do elemento                            |
+| text_to_be_present_in_element_value           | texto no atributo value                             |
+| frame_to_be_available_and_switch_to_it        | espera iframe e já faz o switch                     |
+| alert_is_present                              | espera alerta aparecer                              |
+| staleness_of                                  | espera elemento ficar obsoleto (ex: DOM atualizado) |
