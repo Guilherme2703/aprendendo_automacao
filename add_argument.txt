@@ -1,0 +1,17 @@
+| Argumento                                       | O que faz                                            |
+| ----------------------------------------------- | ---------------------------------------------------- |
+| `--headless`                                    | roda o Chrome sem interface gráfica (modo invisível) |
+| `--disable-gpu`                                 | desativa aceleração de GPU (útil em headless)        |
+| `--window-size=1920,1080`                       | força tamanho da janela                              |
+| `--start-maximized`                             | abre maximizado                                      |
+| `--incognito`                                   | abre janela anônima                                  |
+| `--disable-extensions`                          | desativa extensões                                   |
+| `--disable-popup-blocking`                      | permite pop-ups                                      |
+| `--no-sandbox`                                  | desativa sandbox (⚠️ perigoso, só use se souber)     |
+| `--disable-dev-shm-usage`                       | ajuda a rodar containers (Docker)                    |
+| `--lang=pt-BR`                                  | define idioma do navegador                           |
+| `--user-data-dir=path`                          | aponta para perfil de usuário customizado            |
+| `--proxy-server=ip:porta`                       | usa proxy específico                                 |
+| `--remote-debugging-port=9222`                  | abre porta para debug remoto                         |
+| `--disable-blink-features=AutomationControlled` | esconde “modo automação” para dificultar bloqueios   |
+| `--allow-insecure-localhost`                    | aceita certificados inválidos em localhost           |
