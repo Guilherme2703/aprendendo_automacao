@@ -19,7 +19,7 @@ class CursoAutomacao:
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(
-                    (By.LINK_TEXT, 'dropdown-toggle.cart-heading')
+                    (By.XPATH, '//a[@class="dropdown-toggle"]')
                     )
                 )
             print("Botão encontrado")
@@ -29,3 +29,12 @@ class CursoAutomacao:
         
 curso =  CursoAutomacao()
 curso.Iniciar()
+
+# | O que você quer selecionar            | XPath                                 |
+# | ------------------------------------- | ------------------------------------- |
+# | Elemento por ID                       | `//*[@id="meuId"]`                    |
+# | Elemento por texto exato              | `//button[text()="Enviar"]`           |
+# | Elemento por texto que contém         | `//a[contains(text(),"Clique aqui")]` |
+# | Elemento por atributo                 | `//input[@type="email"]`              |
+# | Primeiro item de uma lista            | `(//ul/li)[1]`                        |
+# | Um botão dentro de um form específico | `//form[@id="loginForm"]//button`     |
