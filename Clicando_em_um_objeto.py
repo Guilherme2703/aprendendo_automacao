@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -17,15 +18,22 @@ class CursoAutomacao:
         self.driver.get('https://zcursos.me/')
         
         try:
-            WebDriverWait(self.driver, 10).until(
+            botao = WebDriverWait(self.driver, 10).until(
                 EC.element_to_be_clickable(
-                    (By.LINK_TEXT, 'dropdown-toggle.cart-heading')
+                    (By.XPATH, '//a[@class="dropdown-toggle"]')
                     )
                 )
             print("Botão encontrado")
+
+            botao.click()
+            
         except TimeoutException:
             print("Botão não encontrado")
+        
+        
+        input("Precione qualquer botão para finalizar a automaçao")
 
         
 curso =  CursoAutomacao()
 curso.Iniciar()
+
